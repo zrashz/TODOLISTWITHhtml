@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="F:\github\TODOLIST\vedio.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="todo-container">
+
+        <div class="date-container">
+            <h2 id="today-date"></h2>
+            <h3 id="current-time"></h3>
+        </div>
+
+
+
+        <h1>To-Do List</h1>
+        <form class="todo-form" onsubmit="addTask(event)">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required>
+            <button type="submit">Add</button>
+        </form>
+        <ul class="todo-list" id="todo-list">
+
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
